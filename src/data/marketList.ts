@@ -1,0 +1,103 @@
+import { MarketItem } from '../types';
+
+export const INITIAL_MARKET_ITEMS: MarketItem[] = [
+  // Open Market (Mile 12 / Bodija / Utako / Ogbete)
+  {
+    id: 'm-1',
+    name: 'Fresh Okra (Ila) - 1 Medium Basket',
+    quantity: '1 Medium Basket',
+    priceNgn: 700,
+    marketType: 'open-market',
+    checked: true,
+  },
+  {
+    id: 'm-2',
+    name: 'Smoked Titus & Catfish (Dried) - 4 Pieces',
+    quantity: '4 Pieces',
+    priceNgn: 2800,
+    marketType: 'open-market',
+    checked: true,
+  },
+  {
+    id: 'm-3',
+    name: 'Ugu Leaves & Fresh Spinach (Shoko) - 3 Bunches',
+    quantity: '3 Bunches',
+    priceNgn: 600,
+    marketType: 'open-market',
+    checked: false,
+  },
+  {
+    id: 'm-4',
+    name: 'Locust Beans (Iru Woro) - 2 Wraps',
+    quantity: '2 Wraps',
+    priceNgn: 300,
+    marketType: 'open-market',
+    checked: true,
+  },
+  {
+    id: 'm-5',
+    name: 'Fresh African Garden Eggs - 1 Heap (8 pcs)',
+    quantity: '1 Heap',
+    priceNgn: 400,
+    marketType: 'open-market',
+    checked: false,
+  },
+  {
+    id: 'm-6',
+    name: 'Brown Honey Beans (Oloyin) - 2 Dericas',
+    quantity: '2 Dericas (approx. 1.6kg)',
+    priceNgn: 1800,
+    marketType: 'open-market',
+    checked: true,
+  },
+  {
+    id: 'm-7',
+    name: 'Ripe Semi-Firm Plantains - 1 Bunch',
+    quantity: '1 Bunch (5-6 fingers)',
+    priceNgn: 1500,
+    marketType: 'open-market',
+    checked: false,
+  },
+
+  // Modern Supermarket (Shoprite / Prince Ebeano / Hubmart)
+  {
+    id: 's-1',
+    name: 'Rolled Whole Oats for Swallow (1kg)',
+    quantity: '1kg bag',
+    priceNgn: 1900,
+    marketType: 'supermarket',
+    checked: true,
+  },
+  {
+    id: 's-2',
+    name: 'Skimmed Evaporated Milk (Low Fat, Unsweetened)',
+    quantity: '3 tins',
+    priceNgn: 1950,
+    marketType: 'supermarket',
+    checked: false,
+  },
+  {
+    id: 's-3',
+    name: 'Unpolished Ofada Brown Rice (2kg Bag)',
+    quantity: '2kg bag',
+    priceNgn: 3400,
+    marketType: 'supermarket',
+    checked: true,
+  },
+  {
+    id: 's-4',
+    name: 'Skinless Chicken Breast Fillets (Frozen, 1kg)',
+    quantity: '1kg pack',
+    priceNgn: 4200,
+    marketType: 'supermarket',
+    checked: false,
+  },
+  {
+    id: 's-5',
+    name: 'Unbleached Organic Virgin Palm Oil (1 Litre)',
+    quantity: '1 Litre bottle',
+    priceNgn: 1800,
+    marketType: 'supermarket',
+    checked: true,
+  },
+];

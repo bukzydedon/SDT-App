@@ -1,0 +1,6 @@
+{
+  "name": "Self-Diet Therapy - Nigerian Nutrition & Health Platform",
+  "description": "Culturally-rooted clinical diet therapy and personalized nutrition platform calibrated for Nigerian and West African cuisine, metabolic health, glycemic control, and sustainable weight management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

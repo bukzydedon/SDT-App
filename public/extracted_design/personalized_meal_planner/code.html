@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-container":"#187431","tertiary-fixed-dim":"#ffb77d","surface-bright":"#f8f9ff","error-container":"#ffdad6","surface-container-low":"#eff4ff","surface-container-high":"#dee9fc","inverse-primary":"#a0d2b0","on-tertiary-fixed":"#2f1500","on-background":"#121c2a","surface-tint":"#3a684c","outline":"#717972","inverse-on-surface":"#eaf1ff","secondary-container":"#9ef7a4","secondary":"#0d6d2b","surface-container-lowest":"#ffffff","primary-fixed":"#bceecb","secondary-fixed-dim":"#82da8a","surface-container":"#e6eeff","surface":"#f8f9ff","background":"#f8f9ff","primary":"#002c17","on-secondary-fixed":"#002107","on-primary":"#ffffff","on-secondary-fixed-variant":"#00531d","on-primary-container":"#80b08f","tertiary-container":"#5c2f00","surface-dim":"#d0dbed","secondary-fixed":"#9ef7a4","on-tertiary":"#ffffff","on-primary-fixed":"#002110","tertiary":"#3d1d00","on-surface-variant":"#414942","on-secondary":"#ffffff","tertiary-fixed":"#ffdcc3","on-error":"#ffffff","on-tertiary-fixed-variant":"#6e3900","primary-container":"#14432a","surface-container-highest":"#d9e3f6","error":"#ba1a1a","on-primary-fixed-variant":"#224f35","on-tertiary-container":"#f28b23","primary-fixed-dim":"#a0d2b0","on-error-container":"#93000a","surface-variant":"#d9e3f6","on-surface":"#121c2a","outline-variant":"#c1c9c0","inverse-surface":"#27313f"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-md":"1rem","margin-desktop":"3rem","space-sm":"0.5rem","margin-tablet":"2rem","margin":"1rem","space-xl":"2rem","space-lg":"1.5rem","gutter-desktop":"2rem","gutter-tablet":"1.5rem","space-xs":"0.25rem","gutter":"1rem"},fontFamily:{"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"body-sm":["Inter"],"label-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Inter"],"body-md":["Inter"],"title-md":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"700"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-lg":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"700"}],"display":["40px",{lineHeight:"48px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-md":["22px",{lineHeight:"30px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"display-mobile":["32px",{lineHeight:"38px",letterSpacing:"-0.025em",fontWeight:"800"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",fontWeight:"600"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Self-Diet Therapy Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XvcrxtRlqarpsmtDnNNNEBy1Yqj2ahHCFK4NtYc6pljazbRnvtWWWI75pax435btF6AX8L9xWHPrE9RIIRsdkrWPzrnZMr1hqpL_8veZ7UGuDDwD6P_P24Z9mgcpUfku3mN74uJFfOY4CJ_DIVqpycUhdIFQsZ4h3-DihUc0jKESaP0DAQQT-OXUCePK6h1sSfEMFvbmeZp5n0ApRmzspIW8ZocQHKjG2oPYBU0cA"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm uppercase text-secondary font-bold truncate leading-none">Self-Diet Therapy</span><h1 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate leading-tight">Meal Planner</h1></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="relative flex items-center bg-surface-container-highest rounded-full px-space-xs py-0.5"><span class="material-symbols-outlined text-secondary text-sm ml-1 select-none pointer-events-none">badge</span><select aria-label="Switch Role" class="appearance-none bg-transparent pr-4 pl-1 py-1 font-label-sm text-label-sm text-on-surface font-bold focus:outline-none cursor-pointer"><option value="free">Free</option><option value="premium">Premium</option><option value="dietitian">Dietitian</option><option value="admin">Admin</option></select><span class="material-symbols-outlined text-on-surface-variant text-xs absolute right-1 pointer-events-none select-none">arrow_drop_down</span></div><button aria-label="View Profile" class="min-h-[44px] min-w-[44px] flex items-center justify-center p-0.5 rounded-full hover:bg-surface-container transition-colors" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsGaYe-9W2NjH4opNR4XENznXQGXlRNz7QyvRtWgelK6_ASZCKoSKEcChsPpD3hHpK5Ie67D0XXTueVFPcIXo0m5cN6FotLfyRbYWQNaYhsRGpWj2Y4OjSWlnJdDZ5MJQqKLqV4TqwUN3hdF-l5UWkTAEnORMDyRNuBKa6qy8HZGe2m14BgAbuMiiqABu7tAetFzgvtqjf7qGvU2NWX0qJEIOZrqqKRm10Ip9pCdQ"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface flex-grow"><div class="flex flex-col w-full pb-10">
+<!-- Plan Horizon & Upgrade Micro-Banner -->
+<div class="px-space-md pt-space-xs pb-space-sm">
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-sm relative z-10">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Free Tier Active</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">7-Day Protocol</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5 font-medium leading-snug">
+              Upgrade to <span class="font-bold text-primary">Premium</span> for 30-Day automated cyclic planning &amp; smart Lagos/Abuja market price sync.
+            </p>
+</div>
+</div>
+<button class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm active:scale-95 transition-all" id="upgradeBtn" type="button">
+          Unlock 30d
+        </button>
+</div>
+</div>
+</div>
+<!-- Weekly Horizontal Calendar Slider -->
+<div class="px-space-md py-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-bold">Current Cycle</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Oct 14 – 20</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container rounded-full px-2 py-0.5">
+<span class="material-symbols-outlined text-xs text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Clinically Aligned</span>
+</div>
+</div>
+<!-- Date Pill Row -->
+<div class="flex items-center gap-2 overflow-x-auto py-1 scroll-smooth" id="daysTrack">
+<!-- Mon 14 -->
+<button class="day-tab flex flex-col items-center justify-center min-w-[48px] py-2 px-1 rounded-xl bg-surface-container text-on-surface-variant active:scale-95 transition-all" data-cal="1,680" data-day="Mon 14" data-daynum="1" data-def="-320" data-prot="84" type="button">
+<span class="font-label-sm text-label-sm opacity-80">Mon</span>
+<span class="font-headline-sm text-headline-sm font-bold mt-0.5">14</span>
+<span class="w-1 h-1 rounded-full bg-transparent mt-1"></span>
+</button>
+<!-- Tue 15 -->
+<button class="day-tab flex flex-col items-center justify-center min-w-[48px] py-2 px-1 rounded-xl bg-surface-container text-on-surface-variant active:scale-95 transition-all" data-cal="1,720" data-day="Tue 15" data-daynum="2" data-def="-300" data-prot="90" type="button">
+<span class="font-label-sm text-label-sm opacity-80">Tue</span>
+<span class="font-headline-sm text-headline-sm font-bold mt-0.5">15</span>
+<span class="w-1 h-1 rounded-full bg-transparent mt-1"></span>
+</button>
+<!-- Wed 16 (Active: Day 3) -->
+<button class="day-tab flex flex-col items-center justify-center min-w-[48px] py-2 px-1 rounded-xl bg-primary text-on-primary shadow-md active:scale-95 transition-all ring-offset-2" data-cal="1,700" data-day="Wed 16" data-daynum="3" data-def="-350" data-prot="88" type="button">
+<span class="font-label-sm text-label-sm font-semibold opacity-90">Wed</span>
+<span class="font-headline-sm text-headline-sm font-extrabold mt-0.5">16</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed mt-1"></span>
+</button>
+<!-- Thu 17 -->
+<button class="day-tab flex flex-col items-center justify-center min-w-[48px] py-2 px-1 rounded-xl bg-surface-container text-on-surface-variant active:scale-95 transition-all" data-cal="1,650" data-day="Thu 17" data-daynum="4" data-def="-400" data-prot="86" type="button">
+<span class="font-label-sm text-label-sm opacity-80">Thu</span>
+<span class="font-headline-sm text-headline-sm font-bold mt-0.5">17</span>
+<span class="w-1 h-1 rounded-full bg-transparent mt-1"></span>
+</button>
+<!-- Fri 18 -->
+<button class="day-tab flex flex-col items-center justify-center min-w-[48px] py-2 px-1 rounded-xl bg-surface-container text-on-surface-variant active:scale-95 transition-all" data-cal="1,750" data-day="Fri 18" data-daynum="5" data-def="-250" data-prot="92" type="button">
+<span class="font-label-sm text-label-sm opacity-80">Fri</span>
+<span class="font-headline-sm text-headline-sm font-bold mt-0.5">18</span>
+<span class="w-1 h-1 rounded-full bg-transparent mt-1"></span>
+</button>
+<!-- Sat 19 -->
+<button class="day-tab flex flex-col items-center justify-center min-w-[48px] py-2 px-1 rounded-xl bg-surface-container text-on-surface-variant active:scale-95 transition-all" data-cal="1,800" data-day="Sat 19" data-daynum="6" data-def="-200" data-prot="85" type="button">
+<span class="font-label-sm text-label-sm opacity-80">Sat</span>
+<span class="font-headline-sm text-headline-sm font-bold mt-0.5">19</span>
+<span class="w-1 h-1 rounded-full bg-transparent mt-1"></span>
+</button>
+<!-- Sun 20 -->
+<button class="day-tab flex flex-col items-center justify-center min-w-[48px] py-2 px-1 rounded-xl bg-surface-container text-on-surface-variant active:scale-95 transition-all" data-cal="1,700" data-day="Sun 20" data-daynum="7" data-def="-350" data-prot="80" type="button">
+<span class="font-label-sm text-label-sm opacity-80">Sun</span>
+<span class="font-headline-sm text-headline-sm font-bold mt-0.5">20</span>
+<span class="w-1 h-1 rounded-full bg-transparent mt-1"></span>
+</button>
+</div>
+</div>
+<!-- Goal Alignment Summary Strip (Dynamic) -->
+<div class="px-space-md py-space-xs">
+<div class="bg-primary-container text-on-primary rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-fixed text-lg" style="font-variation-settings: 'FILL' 1;">tune</span>
+<span class="font-label-lg text-label-lg font-bold" id="activeDayLabel">Day 3 Targets</span>
+</div>
+<div class="bg-surface/10 rounded-full px-2.5 py-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary-fixed">bolt</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-bold">Metabolic Focus</span>
+</div>
+</div>
+<!-- Metric Chips Grid -->
+<div class="grid grid-cols-3 gap-2 mt-1">
+<div class="bg-surface/10 rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase font-bold">Calorie Target</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-md text-headline-md font-bold text-on-primary" id="targetKcal">1,700</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">kcal</span>
+</div>
+</div>
+<div class="bg-surface/10 rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase font-bold">Deficit Pacing</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-md text-headline-md font-bold text-secondary-fixed" id="deficitKcal">-350</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed">kcal</span>
+</div>
+</div>
+<div class="bg-surface/10 rounded-lg p-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase font-bold">Lean Protein</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-md text-headline-md font-bold text-on-primary" id="proteinGrams">88</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">g</span>
+</div>
+</div>
+</div>
+<!-- Macro Progress Bar Representation -->
+<div class="mt-3 pt-2">
+<div class="flex justify-between items-center mb-1 text-on-primary-container">
+<span class="font-label-sm text-label-sm font-semibold">Planned: 1,390 / 1,700 kcal</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary-fixed">310 kcal remaining</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface/20 overflow-hidden flex">
+<div class="bg-secondary-fixed h-full rounded-full transition-all duration-500" style="width: 82%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Dietitian Clinical Endorsement Micro-Badge -->
+<div class="px-space-md py-space-xs">
+<div class="bg-surface-container-low rounded-xl px-space-md py-2.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">health_and_safety</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-bold truncate">Hypertension &amp; Pre-Diabetes Guard</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Palm oil restricted to 1 tbsp • Sodium capped &lt; 1,800mg</p>
+</div>
+</div>
+<button class="flex-shrink-0 flex items-center gap-1 text-secondary font-label-sm text-label-sm font-bold bg-secondary-container px-2.5 py-1 rounded-full" id="dietitianBadgeBtn" type="button">
+<span>Verified</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Active Day Meal Timeline -->
+<div class="px-space-md py-space-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">Planned Nourishment</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 slots allocated</span>
+</div>
+<!-- Slot 1: Breakfast -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-transform duration-200">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-base">wb_twilight</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wide">Breakfast</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">7:30 AM</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-1.5 py-0.5 rounded font-bold">Legume &amp; Grain</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold px-1.5 py-0.5 rounded">₦350 est.</span>
+</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">290</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block -mt-1">kcal</span>
+</div>
+</div>
+<div class="mt-3 flex gap-3">
+<div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Traditional Nigerian bowl of smooth yellow Ogi pap paired with two golden steamed Akara bean cakes and a hard-boiled egg on a rustic stoneware plate, warm lighting, culinary photography, botanical greens accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrPoRON7z0s02AMFwFi18X7Nb3U9ZP0qSZJ1X0hbVd55TzpxO_aHcBd_39PoCihT7xbNrITUll1KYupaFribWIvYOqzY3-RLnSdJwQUXVauJprMYPAUvf4wFr6GuEVjlUAPt2xR2MrKuLAWbsCsU6p9F5QXGlY2P7GF6wdMyiT5HqqZoaaJu3IDfU5sk-TDIjUtVpwoXIspIvtfMOYyfGyacL8rz0wggPS2YEB-gY"/>
+</div>
+<div class="min-w-0 flex-1 flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface font-semibold leading-tight">
+            Fermented Ogi (Pap) with skimmed milk &amp; 2 steamed Akara or boiled egg
+          </p>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs text-secondary">check_circle</span>
+              High gut probiotic
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs text-secondary">fitness_center</span>
+              18g Protein
+            </span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<button class="text-secondary font-label-md text-label-md font-semibold flex items-center gap-1 hover:underline" type="button">
+<span class="material-symbols-outlined text-sm">tune</span>
+          Adjust Portion (Grams)
+        </button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cook time: 15 mins</span>
+</div>
+</div>
+<!-- Slot 2: Mid-Morning Snack -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-transform duration-200">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-base">sunny</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wide">Mid-Morning Snack</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">10:30 AM</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-bold px-1.5 py-0.5 rounded">Digestive Enzymes</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold px-1.5 py-0.5 rounded">₦200 est.</span>
+</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">120</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block -mt-1">kcal</span>
+</div>
+</div>
+<div class="mt-3 flex gap-3">
+<div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Vibrant tropical ripe Nigerian pawpaw papaya sliced cleanly into wedges alongside an artisanal small wooden saucer with roasted golden cashew nuts, top-down clean food lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQwjcy_pkDlLFopJ1lPbYOjBe2BYcrZVbc7bHgXgyDYNKJ9CCN7tQDhLASFRW0xLBwE9OXJ2Huc8js5zxMOGW38my5VwhjpJmTCC7v-Yj-WPSJNEFfq_MloINerVTbo0oRMCDW31c1QZovPePVI8Au9ZNiwQ87x2b5zklr2RAy_pFbGNWGGHIocuLEvk5q7Pm_t3Q2EFxMVPJSzrMDQNXxSnubaHouZuPPEU4IpdA"/>
+</div>
+<div class="min-w-0 flex-1 flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface font-semibold leading-tight">
+            Fresh local pawpaw slices &amp; unsalted roasted cashew nuts (15g)
+          </p>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs text-secondary">eco</span>
+              Rich in papain enzyme
+            </span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Zero prep required</span>
+<button class="text-secondary font-label-md text-label-md font-semibold flex items-center gap-1 hover:underline" type="button">
+<span class="material-symbols-outlined text-sm">shuffle</span>
+          Quick Fruit Swap
+        </button>
+</div>
+</div>
+<!-- Slot 3: Lunch with Smart Swap Interactive Action -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-transform duration-200">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-base">restaurant</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wide">Lunch</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1:30 PM</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-bold px-1.5 py-0.5 rounded">Complex Carbs</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold px-1.5 py-0.5 rounded">₦1,100 est.</span>
+</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface" id="lunchKcal">560</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block -mt-1">kcal</span>
+</div>
+</div>
+<div class="mt-3 flex gap-3">
+<div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Smoky Nigerian Jollof brown rice served with succulent grilled peppered chicken breast and sliced golden air-fried plantain dodo on a clean dark stoneware plate with fresh parsley" id="lunchImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7QzJKyMXkQmHvZiR0UY6spUvDBvctsPPkTaye3CqzQwJHrXe9hGzCuAcXuLjjExYYtaoJR-AnYsPesk0AeVuFo59h3OHfcuATZ9YwX9FGQfyIBjVNhRaasNJr-j_iOsX6YxqqXgMMkzgx2XQ_vQT1XOwoe2UErY_yFppzFT60jA12woRvn8_T2UXxpWqupInOGuii2_v7BCqGNo3QjeSNIa0856luDYMgePOS2OM"/>
+</div>
+<div class="min-w-0 flex-1 flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface font-semibold leading-tight" id="lunchTitle">
+            Jollof Brown Rice with Grilled Peppered Chicken &amp; Steamed Dodo (Air-fried)
+          </p>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface font-medium px-2 py-0.5 rounded">
+              38g Protein
+            </span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface font-medium px-2 py-0.5 rounded">
+              64g Low-GI Carb
+            </span>
+</div>
+</div>
+</div>
+<!-- Smart Swap Interactive Drawer / Button -->
+<div class="mt-3 pt-3">
+<div class="bg-surface-container rounded-lg p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-base">published_with_changes</span>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm uppercase font-bold text-secondary block">Therapeutic Variant</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate block" id="swapStatus">Ofada &amp; Ayamase Stew Available</span>
+</div>
+</div>
+<button class="flex-shrink-0 px-2.5 py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold shadow-sm active:scale-95 transition-all" id="smartSwapBtn" type="button">
+            Smart Swap
+          </button>
+</div>
+</div>
+</div>
+<!-- Slot 4: Dinner -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm transition-transform duration-200">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-base">nightlight</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wide">Dinner</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">6:30 PM</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-bold px-1.5 py-0.5 rounded">Fiber-Dense Swallow</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold px-1.5 py-0.5 rounded">₦950 est.</span>
+</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">420</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block -mt-1">kcal</span>
+</div>
+</div>
+<div class="mt-3 flex gap-3">
+<div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Traditional Nigerian Ila Alasepo fresh chopped okra soup simmered with green spinach ugu leaves, flaky smoked titus fish, lean beef chunks, alongside a smooth oatmeal swallow dumpling in a handcrafted calabash bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCITrQON1lsIeiHEfDCzrkxZnrP9j_xxqnAQ4upMwsSMiHh2RuZXaGaVyTSYmP0ITm9punB8GaqfZqR8oeLYB-tqIwuord83J_WGwT94OGW1t2FWj8xFVJ1MZH-iOz5AZYPQKFZK0xJnoUGFUNTUIm3I3UxCwQYCl6hEJFcyjBu9Gy7Ims2MY28OfmCXdOoBuNnrzk5obZ1NqPNYUI5fc8bkUHPilPdvxQ_9NY6O04"/>
+</div>
+<div class="min-w-0 flex-1 flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface font-semibold leading-tight">
+            Okra Soup loaded with spinach, smoked titus fish, and lean beef with 1/2 wrap Oatmeal swallow
+          </p>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs text-secondary">check</span>
+              Beta-glucan fiber
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs text-secondary">oil_barrel</span>
+              1/2 tsp red palm oil
+            </span>
+</div>
+</div>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Safe for evening glycemic control</span>
+<button class="text-secondary font-label-md text-label-md font-semibold flex items-center gap-1 hover:underline" type="button">
+<span class="material-symbols-outlined text-sm">info</span>
+          View Recipe
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Action Command Center Toolbar -->
+<div class="px-space-md pt-space-sm pb-space-md">
+<div class="bg-surface-container rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-title-md text-title-md font-bold text-on-surface">Meal Plan Actions</span>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-bold">Smart Tools</span>
+</div>
+<div class="grid grid-cols-1 gap-2.5">
+<!-- 1. Regenerate Day Plan -->
+<button class="w-full h-12 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg font-bold flex items-center justify-between px-space-md shadow-sm active:scale-98 transition-all" id="regenerateBtn" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xl" id="regenIcon">autorenew</span>
+<span>Regenerate Day Plan</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface/20 text-on-primary px-2 py-0.5 rounded">Allergy Safe</span>
+</button>
+<!-- 2. Download Nigerian Market Shopping List -->
+<button class="w-full h-12 bg-surface-container-lowest text-primary rounded-lg font-label-lg text-label-lg font-bold flex items-center justify-between px-space-md shadow-sm active:scale-98 transition-all" id="marketListBtn" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xl text-secondary">shopping_cart</span>
+<span>Market Shopping List</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Mile 12 • Bodija • Supermarket</span>
+</button>
+<!-- 3. Export PDF & Request Review Row -->
+<div class="grid grid-cols-2 gap-2 mt-0.5">
+<button class="h-11 bg-surface-container-highest text-on-surface rounded-lg font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-all" id="exportPdfBtn" type="button">
+<span class="material-symbols-outlined text-lg">picture_as_pdf</span>
+<span>Export PDF Guide</span>
+</button>
+<button class="h-11 bg-surface-container-highest text-secondary rounded-lg font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-all" id="requestReviewBtn" type="button">
+<span class="material-symbols-outlined text-lg">medical_services</span>
+<span>Dietitian Review</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal/Sheet: Market Shopping List Breakdown -->
+<div class="hidden fixed inset-0 z-50 flex items-end justify-center bg-inverse-surface/40 backdrop-blur-sm p-0 transition-opacity" id="marketModal">
+<div class="bg-surface-container-lowest rounded-t-2xl w-full max-w-lg p-space-md shadow-xl max-h-[751px] overflow-y-auto">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-2xl">storefront</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Nigerian Market List</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Segmented by optimal sourcing in Lagos &amp; Abuja</p>
+</div>
+</div>
+<button class="p-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface" id="closeModalBtn" type="button">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<!-- Segment 1: Local Open Market Staples -->
+<div class="mt-3">
+<div class="flex items-center justify-between bg-surface-container-high px-3 py-1.5 rounded-lg mb-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Open Market (Mile 12 / Bodija / Utako)</span>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-bold">Staples &amp; Fresh</span>
+</div>
+<ul class="space-y-2">
+<li class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Fresh Okra (Ila) - 1 Medium Basket</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">₦700</span>
+</li>
+<li class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Smoked Titus &amp; Catfish (Dried) - 4 Pieces</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">₦2,800</span>
+</li>
+<li class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Ugu Leaves &amp; Fresh Spinach - 3 Bunches</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">₦600</span>
+</li>
+<li class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Locust Beans (Iru Woro) - 2 wraps</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">₦300</span>
+</li>
+</ul>
+</div>
+<!-- Segment 2: Modern Supermarket Essentials -->
+<div class="mt-4">
+<div class="flex items-center justify-between bg-surface-container-high px-3 py-1.5 rounded-lg mb-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Supermarket (Shoprite / Prince Ebeano)</span>
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded font-bold">Packaged Items</span>
+</div>
+<ul class="space-y-2">
+<li class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Rolled Whole Oats for Swallow (1kg)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">₦1,900</span>
+</li>
+<li class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Skimmed Evaporated Milk (Low Fat)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">₦650</span>
+</li>
+<li class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Unpolished Ofada Brown Rice (2kg Bag)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">₦3,400</span>
+</li>
+</ul>
+</div>
+<!-- Total & Action in modal -->
+<div class="mt-5 pt-3 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase font-bold">Estimated 7-Day Basket</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">₦10,350</span>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md font-bold shadow-sm active:scale-95 transition-all flex items-center gap-1" id="copyListBtn" type="button">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span>Copy to WhatsApp</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Notification Toast -->
+<div class="hidden fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full shadow-lg items-center gap-2 text-center pointer-events-none transition-all duration-300" id="toastNotification">
+<span class="material-symbols-outlined text-sm text-secondary-container" id="toastIcon">check</span>
+<span class="font-body-sm text-body-sm font-semibold" id="toastText">Action completed</span>
+</div>
+</div>
+<script>
+  // Simple interaction controller
+  (function initMealPlanner() {
+    // Elements
+    const dayTabs = document.querySelectorAll('.day-tab');
+    const activeDayLabel = document.getElementById('activeDayLabel');
+    const targetKcal = document.getElementById('targetKcal');
+    const deficitKcal = document.getElementById('deficitKcal');
+    const proteinGrams = document.getElementById('proteinGrams');
+    const smartSwapBtn = document.getElementById('smartSwapBtn');
+    const lunchTitle = document.getElementById('lunchTitle');
+    const lunchKcal = document.getElementById('lunchKcal');
+    const swapStatus = document.getElementById('swapStatus');
+    const regenerateBtn = document.getElementById('regenerateBtn');
+    const regenIcon = document.getElementById('regenIcon');
+    const marketListBtn = document.getElementById('marketListBtn');
+    const marketModal = document.getElementById('marketModal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const copyListBtn = document.getElementById('copyListBtn');
+    const exportPdfBtn = document.getElementById('exportPdfBtn');
+    const requestReviewBtn = document.getElementById('requestReviewBtn');
+    const upgradeBtn = document.getElementById('upgradeBtn');
+    const toast = document.getElementById('toastNotification');
+    const toastText = document.getElementById('toastText');
+
+    function showToast(message, iconName = 'check') {
+      if (!toast) return;
+      toastText.textContent = message;
+      const iconEl = toast.querySelector('#toastIcon');
+      if (iconEl) iconEl.textContent = iconName;
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 2600);
+    }
+
+    // Day Selection Interaction
+    dayTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        dayTabs.forEach(t => {
+          t.className = 'day-tab flex flex-col items-center justify-center min-w-[48px] py-2 px-1 rounded-xl bg-surface-container text-on-surface-variant active:scale-95 transition-all';
+          const dot = t.querySelector('span:last-child');
+          if (dot) dot.className = 'w-1 h-1 rounded-full bg-transparent mt-1';
+        });
+
+        // Set active styling
+        tab.className = 'day-tab flex flex-col items-center justify-center min-w-[48px] py-2 px-1 rounded-xl bg-primary text-on-primary shadow-md active:scale-95 transition-all ring-offset-2';
+        const activeDot = tab.querySelector('span:last-child');
+        if (activeDot) activeDot.className = 'w-1.5 h-1.5 rounded-full bg-secondary-fixed mt-1';
+
+        // Update Target Chips
+        const daynum = tab.getAttribute('data-daynum');
+        const cal = tab.getAttribute('data-cal');
+        const def = tab.getAttribute('data-def');
+        const prot = tab.getAttribute('data-prot');
+
+        if (activeDayLabel) activeDayLabel.textContent = 'Day ' + daynum + ' Targets';
+        if (targetKcal) targetKcal.textContent = cal;
+        if (deficitKcal) deficitKcal.textContent = def;
+        if (proteinGrams) proteinGrams.textContent = prot;
+
+        showToast('Loaded planned meals for Day ' + daynum);
+      });
+    });
+
+    // Smart Swap Lunch Item Toggle
+    let isSwapped = false;
+    if (smartSwapBtn) {
+      smartSwapBtn.addEventListener('click', () => {
+        isSwapped = !isSwapped;
+        if (isSwapped) {
+          lunchTitle.textContent = 'Unpolished Ofada Brown Rice with Rich Ayamase Leaf Stew & Smoked Shawa (520 kcal)';
+          lunchKcal.textContent = '520';
+          swapStatus.textContent = 'Active: Local Ofada Protocol';
+          smartSwapBtn.textContent = 'Revert';
+          smartSwapBtn.className = 'flex-shrink-0 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold shadow-sm active:scale-95 transition-all';
+          showToast('Smart Swap applied: Low-GI Ofada with palm-oil skimmed Ayamase', 'swap_horiz');
+        } else {
+          lunchTitle.textContent = 'Jollof Brown Rice with Grilled Peppered Chicken & Steamed Dodo (Air-fried)';
+          lunchKcal.textContent = '560';
+          swapStatus.textContent = 'Ofada & Ayamase Stew Available';
+          smartSwapBtn.textContent = 'Smart Swap';
+          smartSwapBtn.className = 'flex-shrink-0 px-2.5 py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold shadow-sm active:scale-95 transition-all';
+          showToast('Reverted to Peppered Chicken Jollof');
+        }
+      });
+    }
+
+    // Regenerate Algorithm Micro-Interaction
+    if (regenerateBtn) {
+      regenerateBtn.addEventListener('click', () => {
+        if (regenIcon) regenIcon.classList.add('animate-spin');
+        setTimeout(() => {
+          if (regenIcon) regenIcon.classList.remove('animate-spin');
+          showToast('Regenerated day plan respecting allergen filters & target calorie budget', 'auto_fix_high');
+        }, 600);
+      });
+    }
+
+    // Shopping List Modal Control
+    if (marketListBtn && marketModal) {
+      marketListBtn.addEventListener('click', () => {
+        marketModal.classList.remove('hidden');
+      });
+    }
+    if (closeModalBtn && marketModal) {
+      closeModalBtn.addEventListener('click', () => {
+        marketModal.classList.add('hidden');
+      });
+    }
+    if (marketModal) {
+      marketModal.addEventListener('click', (e) => {
+        if (e.target === marketModal) {
+          marketModal.classList.add('hidden');
+        }
+      });
+    }
+
+    // Copy Market List
+    if (copyListBtn) {
+      copyListBtn.addEventListener('click', () => {
+        showToast('Shopping list copied to clipboard for market run!', 'content_copy');
+        if (marketModal) marketModal.classList.add('hidden');
+      });
+    }
+
+    // Secondary Tools Interactions
+    if (exportPdfBtn) {
+      exportPdfBtn.addEventListener('click', () => {
+        showToast('Generating clinical PDF Meal Guide with nutrition facts...', 'picture_as_pdf');
+      });
+    }
+    if (requestReviewBtn) {
+      requestReviewBtn.addEventListener('click', () => {
+        showToast('Consultation request sent to your assigned clinical dietitian', 'support_agent');
+      });
+    }
+    if (upgradeBtn) {
+      upgradeBtn.addEventListener('click', () => {
+        showToast('Opening 30-Day Automated Nigerian Protocol upgrade options...', 'diamond');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-secondary font-label-md"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center flex-1 min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="home-dashboard" href="#"><span class="material-symbols-outlined text-2xl">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center flex-1 min-h-[44px] transition-colors text-secondary font-label-md" data-path="meal-planner" href="#"><span class="material-symbols-outlined text-2xl">restaurant_menu</span><span class="font-label-sm text-label-sm mt-0.5">Planner</span></a><a class="flex flex-col items-center justify-center flex-1 min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="food-database" href="#"><span class="material-symbols-outlined text-2xl">local_dining</span><span class="font-label-sm text-label-sm mt-0.5">Food DB</span></a><a class="flex flex-col items-center justify-center flex-1 min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="consult-dietitian" href="#"><span class="material-symbols-outlined text-2xl">support_agent</span><span class="font-label-sm text-label-sm mt-0.5">Consult</span></a><a class="flex flex-col items-center justify-center flex-1 min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="calculators-and-profile" href="#"><span class="material-symbols-outlined text-2xl">calculate</span><span class="font-label-sm text-label-sm mt-0.5">Tools</span></a></div></nav></body></html>
